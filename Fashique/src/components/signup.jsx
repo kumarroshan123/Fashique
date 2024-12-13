@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  let [username, setUsername] = useState("");
-  let [password, setPassword] = useState("");
-  let [phone, setPhone] = useState("");
-  let [usernameError, setUsernameError] = useState("");
-  let [passwordError, setPasswordError] = useState([]);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
+  const [usernameError, setUsernameError] = useState("");
+  const [passwordError, setPasswordError] = useState([]);
+  const naviagte=useNavigate();
 
   let handleSubmit = () => {
     setUsernameError("");
@@ -36,6 +37,7 @@ const Signup = () => {
     };
     localStorage.setItem("users", JSON.stringify(users));
     alert("Signup successful!");
+    Navigate("/login");
   };
 
   return (
@@ -52,7 +54,6 @@ const Signup = () => {
             onChange={(e) => setUsername(e.target.value)}
             required
           />
-          {/* Display username error */}
           {usernameError && <p style={{ color: "red" }}>{usernameError}</p>}
 
           <label htmlFor="phone">Phone Number</label>
@@ -81,7 +82,7 @@ const Signup = () => {
           <button onClick={handleSubmit}>CONTINUE</button>
           <p>
             Already have an account?
-            <Link to="">
+            <Link to="/login">
               <b>login</b>
             </Link>
           </p>

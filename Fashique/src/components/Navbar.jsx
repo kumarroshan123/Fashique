@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { ContextName } from "./Contextapi";
 import { useContext } from "react";
 const Navbar = () => {
-  const {isAuthenticated}= useContext(ContextName)
-  let username,usermobile="";
+  const {isAuthenticated,userdetail}= useContext(ContextName)
   return (
     <>
       <div className="navbar">
@@ -948,8 +947,8 @@ const Navbar = () => {
               <li>To access account and manage orders</li>
               <li>
                 <Link to="/login">Login / Signup</Link>
-              </li></div>:<div><li><br />Welcome {username}</li>
-              <li><br>{usermobile}</br></li></div>}
+              </li></div>:<div><li><br />Welcome {userdetail.username}</li>
+              <li><br>{userdetail.usermobile}</br></li></div>}
               <hr />
               <li>
                 <Link to="/orders">Orders</Link>
