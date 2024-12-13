@@ -5,15 +5,16 @@ import { createContext } from "react";
 export let ContextName=createContext();
 
 const ContextData=({children})=>{
-    let [productdata,setproductdata]= useState();
+    const [productdata,setproductdata]= useState();
+    const [isAuthenticated,setisAuthenticated] = useState(false);
     useEffect(()=>{
         const f=async()=>{
-            const res= await fetch("");
+            const res= await fetch("https://dummyjson.com/products");
             const data= await res.json();
             setproductdata(productdata);
         }
-    },)
-    return <ContextName.Provider value={{productdata,setproductdata}} >{children}</ContextName.Provider>
+    },[])
+    return <ContextName.Provider value={{productdata,setproductdata,isAuthenticated,setisAuthenticated}} >{children}</ContextName.Provider>
 }
 
 export default ContextData

@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-
+import { ContextName } from "./Contextapi";
+import { useContext } from "react";
 const Navbar = () => {
+  const {isAuthenticated}= useContext(ContextName)
+  let username,usermobile="";
   return (
     <>
       <div className="navbar">
@@ -425,240 +428,8 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <div className="kids category">
-            <Link to="">KIDS</Link>
-            <ul className="submenu">
-              <li>
-                <Link to="">Boys Clothing</Link>
-              </li>
-              <ul>
-                <li>
-                  <Link to="">T-Shirts</Link>
-                </li>
-                <li>
-                  <Link to="">Shirts</Link>
-                </li>
-                <li>
-                  <Link to="">Shorts</Link>
-                </li>
-                <li>
-                  <Link to="">Jeans</Link>
-                </li>
-                <li>
-                  <Link to="">Trousers</Link>
-                </li>
-                <li>
-                  <Link to="">Clothing Sets</Link>
-                </li>
-                <li>
-                  <Link to="">Ethnic Wear</Link>
-                </li>
-                <li>
-                  <Link to="">Track Pants & Pyjamas</Link>
-                </li>
-                <li>
-                  <Link to="">Jacket, Sweater & Sweatshirts</Link>
-                </li>
-                <li>
-                  <Link to="">Party Wear</Link>
-                </li>
-                <li>
-                  <Link to="">Innerwear & Thermals</Link>
-                </li>
-                <li>
-                  <Link to="">Nightwear & Loungewear</Link>
-                </li>
-                <li>
-                  <Link to="">Value Packs</Link>
-                </li>
-              </ul>
-              <li>
-                <Link to="">Girls Clothing</Link>
-              </li>
-              <ul>
-                <li>
-                  <Link to="">Dresses</Link>
-                </li>
-                <li>
-                  <Link to="">Tops</Link>
-                </li>
-                <li>
-                  <Link to="">Tshirts</Link>
-                </li>
-                <li>
-                  <Link to="">Clothing Sets</Link>
-                </li>
-                <li>
-                  <Link to="">Lehenga Choli</Link>
-                </li>
-                <li>
-                  <Link to="">Kurta Sets</Link>
-                </li>
-                <li>
-                  <Link to="">Party Wear</Link>
-                </li>
-                <li>
-                  <Link to="">Dungarees & Jumpsuits</Link>
-                </li>
-                <li>
-                  <Link to="">Skirts & Shorts</Link>
-                </li>
-                <li>
-                  <Link to="">Tights & Leggings</Link>
-                </li>
-                <li>
-                  <Link to="">Jeans, Trousers & Capris</Link>
-                </li>
-                <li>
-                  <Link to="">Jacket, Sweater & Sweatshirts</Link>
-                </li>
-                <li>
-                  <Link to="">Innerwear & Thermals</Link>
-                </li>
-                <li>
-                  <Link to="">Nightwear & Loungewear</Link>
-                </li>
-                <li>
-                  <Link to="">Value Packs</Link>
-                </li>
-              </ul>
-              <li>
-                <Link to="">Footwear</Link>
-              </li>
-              <ul>
-                <li>
-                  <Link to="">Casual Shoes</Link>
-                </li>
-                <li>
-                  <Link to="">Flipflops</Link>
-                </li>
-                <li>
-                  <Link to="">Sports Shoes</Link>
-                </li>
-                <li>
-                  <Link to="">Flats</Link>
-                </li>
-                <li>
-                  <Link to="">Sandals</Link>
-                </li>
-                <li>
-                  <Link to="">Heels</Link>
-                </li>
-                <li>
-                  <Link to="">School Shoes</Link>
-                </li>
-                <li>
-                  <Link to="">Socks</Link>
-                </li>
-              </ul>
-              <li>
-                <Link to="">Toys & Games</Link>
-              </li>
-              <ul>
-                <li>
-                  <Link to="">Learning & Development</Link>
-                </li>
-                <li>
-                  <Link to="">Activity Toys</Link>
-                </li>
-                <li>
-                  <Link to="">Soft Toys</Link>
-                </li>
-                <li>
-                  <Link to="">Action Figure / Play Set</Link>
-                </li>
-              </ul>
-              <li>
-                <Link to="">Infants</Link>
-              </li>
-              <ul>
-                <li>
-                  <Link to="">Bodysuits</Link>
-                </li>
-                <li>
-                  <Link to="">Rompers & Sleepsuits</Link>
-                </li>
-                <li>
-                  <Link to="">Clothing Sets</Link>
-                </li>
-                <li>
-                  <Link to="">Tshirts & Tops</Link>
-                </li>
-                <li>
-                  <Link to="">Dresses</Link>
-                </li>
-                <li>
-                  <Link to="">Bottom Wear</Link>
-                </li>
-                <li>
-                  <Link to="">Winter Wear</Link>
-                </li>
-                <li>
-                  <Link to="">Innerwear & Sleepwear</Link>
-                </li>
-                <li>
-                  <Link to="">Infant Care</Link>
-                </li>
-              </ul>
-              <li>
-                <Link to="">Home & Bath</Link>
-              </li>
-              <li>
-                <Link to="">Personal Care</Link>
-              </li>
-              <li>
-                <Link to="">Kids Accessories</Link>
-              </li>
-              <ul>
-                <li>
-                  <Link to="">Bags & Backpacks</Link>
-                </li>
-                <li>
-                  <Link to="">Watches</Link>
-                </li>
-                <li>
-                  <Link to="">Jewellery & Hair Accessory</Link>
-                </li>
-                <li>
-                  <Link to="">Sunglasses</Link>
-                </li>
-                <li>
-                  <Link to="">Masks & Protective Gears</Link>
-                </li>
-                <li>
-                  <Link to="">Caps & Hats</Link>
-                </li>
-              </ul>
-              <li>
-                <Link to="">Brands</Link>
-              </li>
-              <ul>
-                <li>
-                  <Link to="">H&M</Link>
-                </li>
-                <li>
-                  <Link to="">Max Kids</Link>
-                </li>
-                <li>
-                  <Link to="">Pantaloons</Link>
-                </li>
-                <li>
-                  <Link to="">United Colors Of Benetton Kids</Link>
-                </li>
-                <li>
-                  <Link to="">YK</Link>
-                </li>
-                <li>
-                  <Link to="">U.S. Polo Assn. Kids</Link>
-                </li>
-                <li>
-                  <Link to="">Mothercare</Link>
-                </li>
-                <li>
-                  <Link to="">HRX</Link>
-                </li>
-              </ul>
-            </ul>
+          <div className="groceries">
+            <Link to="">Groceries</Link>
           </div>
           <div className="homeliving category">
             <Link to="">HOME & LIVING</Link>
@@ -1173,11 +944,13 @@ const Navbar = () => {
               </p>
             </div>
             <ul className="profile-dropdown">
-              <li>Welcome</li>
+                {isAuthenticated ?<div><li>Welcome</li>
               <li>To access account and manage orders</li>
               <li>
                 <Link to="/login">Login / Signup</Link>
-              </li>
+              </li></div>:<div><li><br />Welcome {username}</li>
+              <li><br>{usermobile}</br></li></div>}
+              <hr />
               <li>
                 <Link to="/orders">Orders</Link>
               </li>
