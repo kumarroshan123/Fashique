@@ -7,7 +7,7 @@ export let ContextName = createContext();
 const ContextData = ({ children }) => {
   const [productdata, setproductdata] = useState();
   const [isAuthenticated, setisAuthenticated] = useState(false);
-  const [userdetail, setuserdetail] = useState([]);
+  const [userdetail, setuserdetail] = useState({});
   useEffect(() => {
     const f = async () => {
       const res = await fetch("https://dummyjson.com/products");

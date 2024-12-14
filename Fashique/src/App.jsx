@@ -1,12 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Signup from "./components/signup";
+import Login from "./components/login";
+import Profile from "./profile";
+import Homepage from "./components/Homepage";
 
 function App() {
   return (
     <>
     <Navbar />
       <Routes>
-        <Route path="/men" element={<Men />}>
+        {/* <Route path="/men" element={<Men />}>
           <Route path="topwear" element={<Placeholder category="Men - Topwear" />} />
           <Route path="bottomwear" element={<Placeholder category="Men - Bottomwear" />} />
           <Route path="innerwear-sleepwear" element={<Placeholder category="Men - Innerwear & Sleepwear" />} />
@@ -51,11 +55,13 @@ function App() {
           <Route path="gift-sets" element={<Placeholder category="Beauty - Gift & Makeup Set" />} />
           <Route path="premium" element={<Placeholder category="Beauty - Premium Beauty" />} />
           <Route path="wellness-hygiene" element={<Placeholder category="Beauty - Wellness & Hygiene" />} />
-        </Route>
+        </Route> */}
 
-        <Route path="/profile" element={<CategoryLayout />}>
-          <Route path="login-signup" element={<Placeholder category="Profile - Login / Signup" />} />
-          <Route path="orders" element={<Placeholder category="Profile - Orders" />} />
+        {/* <Route path="/profile" element={<Profile />}> */}
+          <Route path="/" element={<Homepage />}/>
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          {/* <Route path="orders" element={<Placeholder category="Profile - Orders" />} />
           <Route path="wishlist" element={<Placeholder category="Profile - Wishlist" />} />
           <Route path="gift-cards" element={<Placeholder category="Profile - Gift Cards" />} />
           <Route path="insider" element={<Placeholder category="Profile - Myntra Insider" />} />
@@ -63,8 +69,8 @@ function App() {
           <Route path="coupons" element={<Placeholder category="Profile - Coupons" />} />
           <Route path="saved-cards" element={<Placeholder category="Profile - Saved Cards" />} />
           <Route path="saved-vpa" element={<Placeholder category="Profile - Saved VPA" />} />
-          <Route path="saved-addresses" element={<Placeholder category="Profile - Saved Addresses" />} />
-        </Route>
+          <Route path="saved-addresses" element={<Placeholder category="Profile - Saved Addresses" />} /> */}
+        {/* </Route> */}
       </Routes>
     </>
   )

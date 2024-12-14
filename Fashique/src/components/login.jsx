@@ -1,11 +1,14 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import { ContextName } from "./Contextapi";
 
 const Login = () => {
   const [usernamelogin, setUsernamelogin] = useState("");
   const [userpassword, setUserpassword] = useState("");
+  const {setisAuthenticated,setuserdetail}=useContext(ContextName);
   const [error, setError] = useState("");
   const users = JSON.parse(localStorage.getItem("users")) || {};
+  const navigate=useNavigate()
 
   const handleSubmit = () => {
     if (!users[usernamelogin]) {
@@ -18,6 +21,9 @@ const Login = () => {
     }
     setError("");
     alert("Login successful!");
+    setuserdetail({username:usernamelogin,phone:users[usernamelogin].phoneNumber})
+    setisAuthenticated(true);
+    navigate("/")
   };
 
   return (

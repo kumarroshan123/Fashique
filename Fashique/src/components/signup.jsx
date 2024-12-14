@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { ContextName } from "./Contextapi";
 
 const Signup = () => {
   const [username, setUsername] = useState("");
@@ -7,7 +9,8 @@ const Signup = () => {
   const [phone, setPhone] = useState("");
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState([]);
-  const naviagte=useNavigate();
+  
+  const navigate = useNavigate();
 
   let handleSubmit = () => {
     setUsernameError("");
@@ -17,16 +20,19 @@ const Signup = () => {
       setUsernameError("Username already exists. Please try another username.");
       return;
     }
-    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/; 
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
     if (!passwordRegex.test(password)) {
-      setPasswordError([...passwordError],
-        ["Password must be at least 8 characters long and include one letter and one number."]
-      );
+      setPasswordError((prev) => [
+        ...prev,
+        "Password must be at least 8 characters long and include one letter and one number.",
+      ]);
       return;
     }
-
     if (password.includes(username)) {
-      setPasswordError([...passwordError],["Password should not include the username."]);
+      setPasswordError((prev) => [
+        ...prev,
+        "Password should not include the username.",
+      ]);
       return;
     }
     users[username] = {
@@ -36,8 +42,9 @@ const Signup = () => {
       wishlist: [],
     };
     localStorage.setItem("users", JSON.stringify(users));
+    setuserdetail({username,phone});
     alert("Signup successful!");
-    Navigate("/login");
+    navigate("/login");
   };
 
   return (
@@ -73,7 +80,12 @@ const Signup = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          {passwordError && <p style={{ color: "red" }}>{passwordError.map((ele)=>ele)}</p>}
+          {passwordError.length > 0 &&
+            passwordError.map((ele, index) => (
+              <p key={index} style={{ color: "red" }}>
+                {ele}
+              </p>
+            ))}
 
           <p>
             By continuing, I agree to the
