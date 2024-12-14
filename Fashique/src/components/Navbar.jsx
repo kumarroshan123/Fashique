@@ -759,7 +759,7 @@ const Navbar = () => {
           </div>
           
           <div className="homeliving category">
-            <Link to="" className="list-link">
+            <Link to="/home-living" className="list-link">
               HOME & LIVING
             </Link>
             <ul className="submenu">

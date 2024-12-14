@@ -1,6 +1,5 @@
 import { useContext, useState, useEffect } from "react";
 import { ContextName } from "./Contextapi";
-import like from "../assets/like.png"
 import './Menpage.css'
 
 const Women = () => {
@@ -19,7 +18,8 @@ const Women = () => {
         item.category == "womens-bags" ||
         item.category == "womens-jewellery" ||
         item.category == "womens-shoes" ||
-        item.category == "womens-watches"
+        item.category == "womens-watches" ||
+        item.category == "tops"
     );
     productdata.map((ele)=>{
         console.log(ele.category);
@@ -44,7 +44,7 @@ const Women = () => {
 
   return (
     <div className="mens-div">
-      <p>Men's</p>
+      <p>Women's</p>
       <div>
         <div className="filters">
           <p>
@@ -64,6 +64,7 @@ const Women = () => {
               <option value="womens-jewellery">WOMEN'S JEWELLERY</option>
               <option value="womens-shoes">WOMEN'S SHOES</option>
               <option value="womens-watches">WOMEN'S WATCHES</option>
+              <option value="tops">WOMEN'S Tops</option>
             </select>
           </div>
           <div className="sortby">

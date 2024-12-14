@@ -7,14 +7,19 @@ import Homepage from "./components/Homepage";
 import Men from "./components/Men";
 import { useEffect } from "react";
 import Women from "./components/Women";
+import Homeliving from "./components/Homeliving";
 
 function App() {
   return (
     <>
     <Navbar />
         <Routes>
+         <Route path="/"  element={<Homepage />}/>
+         <Route path="/signup" element={<Signup />} />
+         <Route path="/login" element={<Login />} />
          <Route path="/men" element={<Men />}/>
          <Route path="/women" element={<Women />}/>
+         <Route path="/home-living" element={<Homeliving />}/>
         {/* 
           <Route path="topwear" element={<Placeholder category="Men - Topwear" />} />
           <Route path="bottomwear" element={<Placeholder category="Men - Bottomwear" />} />
@@ -63,9 +68,7 @@ function App() {
         </Route> */}
 
         {/* <Route path="/profile" element={<Profile />}> */}
-          <Route path="/"  element={<Homepage />}/>
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
+          
           {/* <Route path="orders" element={<Placeholder category="Profile - Orders" />} />
           <Route path="wishlist" element={<Placeholder category="Profile - Wishlist" />} />
           <Route path="gift-cards" element={<Placeholder category="Profile - Gift Cards" />} />
