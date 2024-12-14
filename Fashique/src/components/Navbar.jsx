@@ -1006,7 +1006,7 @@ const Navbar = () => {
 
           </div>
           <div className="beauty category">
-            <Link to="" className="list-link">
+            <Link to="/beauty" className="list-link">
               BEAUTY
             </Link>
             <ul className="submenu">

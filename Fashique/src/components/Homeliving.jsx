@@ -42,7 +42,7 @@ const Homeliving = () => {
 
   return (
     <div className="mens-div">
-      <p>Women's</p>
+      <p>Home & Living</p>
       <div>
         <div className="filters">
           <p>
