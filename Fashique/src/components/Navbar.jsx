@@ -1129,8 +1129,8 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="groceries category">
-            <Link to="" className="list-link">
-              GROCERIES
+            <Link to="/electronics" className="list-link">
+              ELECTRONICS
             </Link>
           </div>
         </div>
