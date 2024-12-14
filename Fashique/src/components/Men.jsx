@@ -44,7 +44,7 @@ const Men = () => {
     <div className="mens-div">
       <p>Men's</p>
       <div>
-        <div>
+        <div className="filters">
           <p>
             <b>FILTERS</b>
           </p>
@@ -82,12 +82,12 @@ const Men = () => {
           {filterdata && filterdata.length > 0 ? (
             filterdata.map((ele, i) => (
               <div className="data-div" key={i}>
-                <div className="image-div">
+                <div className="image-div-product">
                     <div><img src={ele.thumbnail} alt="" />
                   <p>
                     {ele.rating} <span>&#9733;</span> | {ele.stock}k
                   </p></div>
-                  <div><button onClick={()=>{
+                  <div className="button-div"><button onClick={()=>{
                         const users = JSON.parse(localStorage.getItem("users")) || {};
                         const user = users[userdetail.username];
                         if (user) {
@@ -105,7 +105,7 @@ const Men = () => {
                         }else {
                             alert("Please Login/SignUp first !!");
                         } 
-                  }}><img src={like} alt="" /></button></div>
+                  }}>🖤</button></div>
                   
                 </div>
                 <p>
@@ -115,7 +115,7 @@ const Men = () => {
                 <p>
                   <b>Rs. {ele.price}</b>
                 </p>
-                <button onClick={()=>{
+                <button className="addtobag" onClick={()=>{
                      const users = JSON.parse(localStorage.getItem("users")) || {};
                      const user = users[userdetail.username];
                      if (user) {

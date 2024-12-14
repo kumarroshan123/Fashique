@@ -1,17 +1,20 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Router, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Signup from "./components/signup";
 import Login from "./components/login";
 import Profile from "./profile";
 import Homepage from "./components/Homepage";
 import Men from "./components/Men";
+import { useEffect } from "react";
+import Women from "./components/Women";
 
 function App() {
   return (
     <>
     <Navbar />
-      <Routes>
+        <Routes>
          <Route path="/men" element={<Men />}/>
+         <Route path="/women" element={<Women />}/>
         {/* 
           <Route path="topwear" element={<Placeholder category="Men - Topwear" />} />
           <Route path="bottomwear" element={<Placeholder category="Men - Bottomwear" />} />
@@ -60,7 +63,7 @@ function App() {
         </Route> */}
 
         {/* <Route path="/profile" element={<Profile />}> */}
-          <Route path="/" element={<Homepage />}/>
+          <Route path="/"  element={<Homepage />}/>
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           {/* <Route path="orders" element={<Placeholder category="Profile - Orders" />} />
@@ -73,7 +76,7 @@ function App() {
           <Route path="saved-vpa" element={<Placeholder category="Profile - Saved VPA" />} />
           <Route path="saved-addresses" element={<Placeholder category="Profile - Saved Addresses" />} /> */}
         {/* </Route> */}
-      </Routes>
+        </Routes>
     </>
   )
 }
