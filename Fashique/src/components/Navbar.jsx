@@ -25,12 +25,12 @@ const Navbar = () => {
         </div>
         <div className="nav-list">
           <div className="men category">
-            <Link to="" className="list-link">
+            <Link to="/men" className="list-link">
               MEN
             </Link>
             <ul className="submenu">
               <li className="category-link topwear">
-                <Link to="/topwear">Topwear</Link>
+                <Link to="/topwear" className="">Topwear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link to="/topwear/tshirts" className="subcategory-link">

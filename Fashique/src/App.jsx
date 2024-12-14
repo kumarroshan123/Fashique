@@ -4,13 +4,15 @@ import Signup from "./components/signup";
 import Login from "./components/login";
 import Profile from "./profile";
 import Homepage from "./components/Homepage";
+import Men from "./components/Men";
 
 function App() {
   return (
     <>
     <Navbar />
       <Routes>
-        {/* <Route path="/men" element={<Men />}>
+         <Route path="/men" element={<Men />}/>
+        {/* 
           <Route path="topwear" element={<Placeholder category="Men - Topwear" />} />
           <Route path="bottomwear" element={<Placeholder category="Men - Bottomwear" />} />
           <Route path="innerwear-sleepwear" element={<Placeholder category="Men - Innerwear & Sleepwear" />} />
