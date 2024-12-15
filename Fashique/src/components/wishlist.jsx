@@ -1,5 +1,6 @@
 import { useContext, useState } from "react"
 import { ContextName } from "./Contextapi"
+import './wishlist.css'
 
 const Wishlist = ()=>{
     const {userdetail} =useContext(ContextName);
@@ -8,6 +9,7 @@ const Wishlist = ()=>{
     return (
         <div className="wishlist-main">
             <p><b>My Wishlist {wishlist.length} items</b></p>
+            <div>
             {!wishlist? <div><b>No items Added in Wishlist</b></div>: wishlist.map((ele)=>{
                 return (
                     <div key={ele.id} className="wishlist-container-div">
@@ -53,6 +55,7 @@ const Wishlist = ()=>{
                     </div>
                 )
             })}
+            </div>
         </div>
     )
 }
