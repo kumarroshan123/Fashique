@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { ContextName } from "./Contextapi";
 import { useContext } from "react";
 import logo from "../assets/logo.png";
@@ -14,6 +14,7 @@ import studio from "../assets/studio.png"
 
 const Navbar = () => {
   const { isAuthenticated ,setisAuthenticated, userdetail } = useContext(ContextName);
+  const navigate = useNavigate();
   console.log(userdetail);
   return (
     <>
@@ -1200,7 +1201,9 @@ const Navbar = () => {
               }
             </ul>
           </div>
-          <div className="nav-profile">
+          <div className="nav-profile" onClick={()=>{
+            navigate('/wishlist')
+          }}>
             <div>
               <img src={like} alt="" />
             </div>
