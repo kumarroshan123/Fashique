@@ -49,6 +49,16 @@ font-family: "Open Sans", serif;
 .category:hover {
   border-bottom: 2px solid rgb(217, 104, 123);
 }
+ 
+.link-style {
+  color: rgb(251, 89, 113);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-style:hover {
+  color: rgb(89, 209, 249);
+}
 
 .nav-search {
   display: flex;
@@ -104,7 +114,7 @@ font-family: "Open Sans", serif;
   background-color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 10px;
+  padding:10px 25px;
   z-index: 100;
   height: 350px;
   width: auto;
@@ -114,7 +124,7 @@ font-family: "Open Sans", serif;
 .category:hover .submenu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
   top: 80px;
   left: 110px;
@@ -123,11 +133,14 @@ font-family: "Open Sans", serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
   top: 80px;
   width: 220px;
   height: auto;
   font-size: 1.1em;
+}
+
+.profile-dropdown:hover{
+   cursor:default;
 }
 
 .nav-profile {
@@ -136,13 +149,9 @@ font-family: "Open Sans", serif;
 
 .profile-dropdown li {
   padding: 5px 10px;
-  cursor: pointer;
   text-decoration: none;
 }
 
-.profile-dropdown li:hover {
-  background-color: #f0f0f0;
-}
 
 .submenu li,
 .subcategory-link {
@@ -161,15 +170,17 @@ font-family: "Open Sans", serif;
 }
 
 .subcategory-link:hover {
-  background-color: #f0f0f0;
+  text-decoration: underline;
 }
 
 .category-link > a {
   font-weight: bold;
+  padding: 5px 0px;
 }
 
 .topwear > .subcategory-link {
   font-style: italic;
+  padding: 5px 0px;
 }
 
 .submenu > a {
@@ -190,7 +201,8 @@ hr {
 .userdetail {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .studio-menu:hover {
@@ -200,6 +212,15 @@ hr {
 #studio {
   height: 300px;
   width: 450px;
+}
+
+.logout-btn{
+  padding: 5px;
+  background-color: rgb(217, 49, 49);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
 }
 
 .home-main {
@@ -327,10 +348,15 @@ hr {
     text-align: center;
   }
   
-  /* Privacy Policy Text */
+  
   .form p:last-child {
     font-size: 0.8rem;
     color: #777;
     text-align: center;
     margin-top: 15px;
+  }
+
+  .explore-btn{
+    padding: 5px;
+    cursor: pointer;
   }

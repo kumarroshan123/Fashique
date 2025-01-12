@@ -31,7 +31,7 @@ const Navbar = () => {
             </Link>
             <ul className="submenu">
               <li className="category-link topwear">
-                <Link to="/topwear" className="">Topwear</Link>
+                <Link to="/topwear" className="link-style">Topwear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link to="/topwear/tshirts" className="subcategory-link">
@@ -105,7 +105,7 @@ const Navbar = () => {
               </li>
 
               <li className="category-link bottomwear">
-                <Link to="/bottomwear">Bottomwear</Link>
+                <Link to="/bottomwear" className="link-style">Bottomwear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link to="/bottomwear/jeans" className="subcategory-link">
@@ -145,7 +145,7 @@ const Navbar = () => {
               </li>
 
               <li className="category-link innerwear">
-                <Link to="/innerwear">Innerwear & Sleepwear</Link>
+                <Link to="/innerwear" className="link-style">Innerwear & Sleepwear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -173,16 +173,11 @@ const Navbar = () => {
                       Sleepwear & Loungewear
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/innerwear/thermals" className="subcategory-link">
-                      Thermals
-                    </Link>
-                  </li>
                 </ul>
               </li>
 
               <li className="category-link footwear">
-                <Link to="/footwear">Footwear</Link>
+                <Link to="/footwear" className="link-style">Footwear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -238,7 +233,7 @@ const Navbar = () => {
               </li>
 
               <li className="category-link accessories">
-                <Link to="/accessories">Fashion Accessories</Link>
+                <Link to="/accessories" className="link-style">Fashion Accessories</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -335,7 +330,7 @@ const Navbar = () => {
             </Link>
             <ul className="submenu">
               <li className="category-link topwear">
-                <Link to="/indian-fusion-wear">Indian & Fusion Wear</Link>
+                <Link to="/indian-fusion-wear" className="link-style">Indian & Fusion Wear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -428,10 +423,10 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="category-link topwear">
-                <Link to="/watches-wearables">Watches & Wearables</Link>
+                <Link to="/watches-wearables" className="link-style">Watches & Wearables</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/western-wear">Western Wear</Link>
+                <Link to="/western-wear" className="link-style">Western Wear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -441,11 +436,7 @@ const Navbar = () => {
                       Dresses
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/western-wear/tops" className="subcategory-link">
-                      Tops
-                    </Link>
-                  </li>
+                  
                   <li>
                     <Link
                       to="/western-wear/t-shirts"
@@ -507,43 +498,20 @@ const Navbar = () => {
                       Shrugs
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      to="/western-wear/sweaters-sweatshirts"
-                      className="subcategory-link"
-                    >
-                      Sweaters & Sweatshirts
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/western-wear/jackets-coats"
-                      className="subcategory-link"
-                    >
-                      Jackets & Coats
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/western-wear/blazers-waistcoats"
-                      className="subcategory-link"
-                    >
-                      Blazers & Waistcoats
-                    </Link>
-                  </li>
+                  
                 </ul>
               </li>
               <li className="category-link topwear">
-                <Link to="/plus-size">Plus Size</Link>
+                <Link to="/plus-size" className="link-style">Plus Size</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/maternity">Maternity</Link>
+                <Link to="/maternity" className="link-style">Maternity</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/sunglasses-frames">Sunglasses & Frames</Link>
+                <Link to="/sunglasses-frames" className="link-style">Sunglasses & Frames</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/footwear">Footwear</Link>
+                <Link to="/footwear" className="link-style">Footwear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link to="/footwear/flats" className="subcategory-link">
@@ -579,19 +547,19 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="category-link topwear">
-                <Link to="/sports-active-wear">Sports & Active Wear</Link>
+                <Link to="/sports-active-wear" className="link-style">Sports & Active Wear</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/clothing">Clothing</Link>
+                <Link to="/clothing" className="link-style">Clothing</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/sports-accessories">Sports Accessories</Link>
+                <Link to="/sports-accessories" className="link-style">Sports Accessories</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/sports-equipment">Sports Equipment</Link>
+                <Link to="/sports-equipment" className="link-style">Sports Equipment</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/lingerie-sleepwear">Lingerie & Sleepwear</Link>
+                <Link to="/lingerie-sleepwear" className="link-style">Lingerie & Sleepwear</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -625,26 +593,10 @@ const Navbar = () => {
                       Sleepwear & Loungewear
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      to="/lingerie-sleepwear/swimwear"
-                      className="subcategory-link"
-                    >
-                      Swimwear
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/lingerie-sleepwear/camisoles-thermals"
-                      className="subcategory-link"
-                    >
-                      Camisoles & Thermals
-                    </Link>
-                  </li>
                 </ul>
               </li>
               <li className="category-link topwear">
-                <Link to="/beauty-personal-care">Beauty & Personal Care</Link>
+                <Link to="/beauty-personal-care" className="link-style">Beauty & Personal Care</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -689,7 +641,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="category-link topwear">
-                <Link to="/gadgets">Gadgets</Link>
+                <Link to="/gadgets" className="link-style">Gadgets</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -720,7 +672,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="category-link topwear">
-                <Link to="/jewellery">Jewellery</Link>
+                <Link to="/jewellery" className="link-style">Jewellery</Link>
                 <ul className="subcategory">
                   <li>
                     <Link
@@ -746,15 +698,15 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="category-link topwear">
-                <Link to="/backpacks">Backpacks</Link>
+                <Link to="/backpacks" className="link-style">Backpacks</Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/handbags-bags-wallets">
+                <Link to="/handbags-bags-wallets" className="link-style">
                   Handbags, Bags & Wallets
                 </Link>
               </li>
               <li className="category-link topwear">
-                <Link to="/luggages-trolleys">Luggages & Trolleys</Link>
+                <Link to="/luggages-trolleys" className="link-style">Luggages & Trolleys</Link>
               </li>
             </ul>
           </div>
@@ -765,7 +717,7 @@ const Navbar = () => {
             </Link>
             <ul className="submenu">
   <li className="category-link topwear">
-    <Link to="/bed-linen-furnishing">Bed Linen & Furnishing</Link>
+    <Link to="/bed-linen-furnishing" className="link-style">Bed Linen & Furnishing</Link>
     <ul>
       <li>
         <Link to="/bed-linen-furnishing/bed-runners" className="subcategory-link">Bed Runners</Link>
@@ -777,16 +729,7 @@ const Navbar = () => {
         <Link to="/bed-linen-furnishing/bedsheets" className="subcategory-link">Bedsheets</Link>
       </li>
       <li>
-        <Link to="/bed-linen-furnishing/bedding-sets" className="subcategory-link">Bedding Sets</Link>
-      </li>
-      <li>
         <Link to="/bed-linen-furnishing/blankets-quilts-dohars" className="subcategory-link">Blankets, Quilts & Dohars</Link>
-      </li>
-      <li>
-        <Link to="/bed-linen-furnishing/pillows-pillow-covers" className="subcategory-link">Pillows & Pillow Covers</Link>
-      </li>
-      <li>
-        <Link to="/bed-linen-furnishing/bed-covers" className="subcategory-link">Bed Covers</Link>
       </li>
       <li>
         <Link to="/bed-linen-furnishing/diwan-sets" className="subcategory-link">Diwan Sets</Link>
@@ -794,13 +737,10 @@ const Navbar = () => {
       <li>
         <Link to="/bed-linen-furnishing/chair-pads-covers" className="subcategory-link">Chair Pads & Covers</Link>
       </li>
-      <li>
-        <Link to="/bed-linen-furnishing/sofa-covers" className="subcategory-link">Sofa Covers</Link>
-      </li>
     </ul>
   </li>
   <li className="category-link topwear"> 
-    <Link to="/flooring">Flooring</Link>
+    <Link to="/flooring" className="link-style">Flooring</Link>
     <ul>
       <li>
         <Link to="/flooring/floor-runners" className="subcategory-link">Floor Runners</Link>
@@ -817,7 +757,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link topwear">
-    <Link to="/bath">Bath</Link>
+    <Link to="/bath" className="link-style">Bath</Link>
     <ul>
       <li>
         <Link to="/bath/bath-towels" className="subcategory-link">Bath Towels</Link>
@@ -846,7 +786,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link topwear">
-    <Link to="/lamps-lighting">Lamps & Lighting</Link>
+    <Link to="/lamps-lighting" className="link-style">Lamps & Lighting</Link>
     <ul>
       <li>
         <Link to="/lamps-lighting/floor-lamps" className="subcategory-link">Floor Lamps</Link>
@@ -869,7 +809,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link topwear">
-    <Link to="/home-decor">Home Décor</Link>
+    <Link to="/home-decor" className="link-style">Home Décor</Link>
     <ul>
       <li>
         <Link to="/home-decor/plants-planters" className="subcategory-link">Plants & Planters</Link>
@@ -907,25 +847,19 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link topwear">
-    <Link to="/cushions-cushion-covers">Cushions & Cushion Covers</Link>
+    <Link to="/cushions-cushion-covers" className="link-style">Cushions & Cushion Covers</Link>
   </li>
   <li className="category-link topwear">
-    <Link to="/curtains">Curtains</Link>
+    <Link to="/curtains" className="link-style">Curtains</Link>
   </li>
   <li className="category-link topwear">
-    <Link to="/home-gift-sets">Home Gift Sets</Link>
+    <Link to="/home-gift-sets" className="link-style">Home Gift Sets</Link>
   </li>
   <li className="category-link topwear">
-    <Link to="/kitchen-table">Kitchen & Table</Link>
+    <Link to="/kitchen-table" className="link-style">Kitchen & Table</Link>
     <ul>
       <li>
-        <Link to="/kitchen-table/table-runners" className="subcategory-link">Table Runners</Link>
-      </li>
-      <li>
-        <Link to="/kitchen-table/dinnerware-serveware" className="subcategory-link">Dinnerware & Serveware</Link>
-      </li>
-      <li>
-        <Link to="/kitchen-table/cups-mugs" className="subcategory-link">Cups and Mugs</Link>
+        <Link to="/kitchen-tcups-mugs" className="subcategory-link">Cups and Mugs</Link>
       </li>
       <li>
         <Link to="/kitchen-table/bakeware-cookware" className="subcategory-link">Bakeware & Cookware</Link>
@@ -942,7 +876,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link topwear">
-    <Link to="/storage">Storage</Link>
+    <Link to="/storage" className="link-style">Storage</Link>
     <ul>
       <li>
         <Link to="/storage/bins" className="subcategory-link">Bins</Link>
@@ -962,29 +896,8 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link topwear">
-    <Link to="/brands">Brands</Link>
+    <Link to="/brands" className="link-style">Brands</Link>
     <ul>
-      <li>
-        <Link to="/brands/hm" className="subcategory-link">H&M</Link>
-      </li>
-      <li>
-        <Link to="/brands/marks-spencer" className="subcategory-link">Marks & Spencer</Link>
-      </li>
-      <li>
-        <Link to="/brands/home-centre" className="subcategory-link">Home Centre</Link>
-      </li>
-      <li>
-        <Link to="/brands/spaces" className="subcategory-link">Spaces</Link>
-      </li>
-      <li>
-        <Link to="/brands/ddecor" className="subcategory-link">D'Decor</Link>
-      </li>
-      <li>
-        <Link to="/brands/story-home" className="subcategory-link">Story@Home</Link>
-      </li>
-      <li>
-        <Link to="/brands/pure-home-living" className="subcategory-link">Pure Home & Living</Link>
-      </li>
       <li>
         <Link to="/brands/swayam" className="subcategory-link">Swayam</Link>
       </li>
@@ -1012,7 +925,7 @@ const Navbar = () => {
             </Link>
             <ul className="submenu">
   <li className="category-link topwear">
-    <Link to="/beauty/makeup" >Makeup</Link>
+    <Link to="/beauty/makeup" className="link-style">Makeup</Link>
     <ul className="subcategory">
       <li><Link to="/beauty/makeup/lipstick" className="subcategory-link">Lipstick</Link></li>
       <li><Link to="/beauty/makeup/lip-gloss" className="subcategory-link">Lip Gloss</Link></li>
@@ -1029,7 +942,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link skincare">
-    <Link to="/beauty/skincare" >Skincare, Bath & Body</Link>
+    <Link to="/beauty/skincare" className="link-style">Skincare, Bath & Body</Link>
     <ul className="subcategory">
       <li><Link to="/beauty/skincare/face-moisturiser" className="subcategory-link">Face Moisturiser</Link></li>
       <li><Link to="/beauty/skincare/cleanser" className="subcategory-link">Cleanser</Link></li>
@@ -1047,7 +960,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link haircare">
-    <Link to="/beauty/haircare" >Haircare</Link>
+    <Link to="/beauty/haircare" className="link-style">Haircare</Link>
     <ul className="subcategory">
       <li><Link to="/beauty/haircare/shampoo" className="subcategory-link">Shampoo</Link></li>
       <li><Link to="/beauty/haircare/conditioner" className="subcategory-link">Conditioner</Link></li>
@@ -1060,7 +973,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link fragrances">
-    <Link to="/beauty/fragrances" >Fragrances</Link>
+    <Link to="/beauty/fragrances" className="link-style">Fragrances</Link>
     <ul className="subcategory">
       <li><Link to="/beauty/fragrances/perfume" className="subcategory-link">Perfume</Link></li>
       <li><Link to="/beauty/fragrances/deodorant" className="subcategory-link">Deodorant</Link></li>
@@ -1068,7 +981,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link appliances">
-    <Link to="/beauty/appliances" >Appliances</Link>
+    <Link to="/beauty/appliances" className="link-style">Appliances</Link>
     <ul className="subcategory">
       <li><Link to="/beauty/appliances/hair-straightener" className="subcategory-link">Hair Straightener</Link></li>
       <li><Link to="/beauty/appliances/hair-dryer" className="subcategory-link">Hair Dryer</Link></li>
@@ -1076,7 +989,7 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link mens-grooming">
-    <Link to="/beauty/mens-grooming" >Men's Grooming</Link>
+    <Link to="/beauty/mens-grooming" className="link-style">Men's Grooming</Link>
     <ul className="subcategory">
       <li><Link to="/beauty/mens-grooming/trimmers" className="subcategory-link">Trimmers</Link></li>
       <li><Link to="/beauty/mens-grooming/beard-oil" className="subcategory-link">Beard Oil</Link></li>
@@ -1084,20 +997,20 @@ const Navbar = () => {
     </ul>
   </li>
   <li className="category-link beauty-gift">
-    <Link to="/beauty/gifts" >Beauty Gift & Makeup Set</Link>
+    <Link to="/beauty/gifts" className="link-style">Beauty Gift & Makeup Set</Link>
     <ul className="subcategory">
       <li><Link to="/beauty/gifts/beauty-gift" className="subcategory-link">Beauty Gift</Link></li>
       <li><Link to="/beauty/gifts/makeup-kit" className="subcategory-link">Makeup Kit</Link></li>
     </ul>
   </li>
   <li className="category-link premium-beauty">
-    <Link to="/beauty/premium" >Premium Beauty</Link>
+    <Link to="/beauty/premium" className="link-style">Premium Beauty</Link>
   </li>
   <li className="category-link wellness-hygiene">
-    <Link to="/beauty/wellness-hygiene" >Wellness & Hygiene</Link>
+    <Link to="/beauty/wellness-hygiene" className="link-style">Wellness & Hygiene</Link>
   </li>
   <li className="category-link top-brands">
-    <Link to="/beauty/brands" >Top Brands</Link>
+    <Link to="/beauty/brands" className="link-style">Top Brands</Link>
     <ul className="subcategory">
       <li><Link to="/beauty/brands/lakme" className="subcategory-link">Lakme</Link></li>
       <li><Link to="/beauty/brands/maybelline" className="subcategory-link">Maybelline</Link></li>
@@ -1125,7 +1038,7 @@ const Navbar = () => {
                 <img id="studio" src={studio} alt="" />
               </li>
               <li>
-                <button>Explore Studio</button>
+                <button className="explore-btn">Explore Studio</button>
               </li>
             </ul>
           </div>
@@ -1154,7 +1067,7 @@ const Navbar = () => {
         </div>
         <div className="profile">
           <div className="nav-profile">
-            <div>
+            <div className="">
               <img src={profile} alt="" />
             </div>
             <div>
@@ -1179,23 +1092,23 @@ const Navbar = () => {
               )}
               <hr />
               <li>
-                <Link to="/orders">Orders</Link>
+                <Link to="/orders" className="link-style">Orders</Link>
               </li>
               <li>
-                <Link to="/wishlist">Wishlist</Link>
+                <Link to="/wishlist" className="link-style">Wishlist</Link>
               </li>
               <li>
-                <Link to="/gift-cards">Gift Cards</Link>
+                <Link to="/gift-cards" className="link-style">Gift Cards</Link>
               </li>
               <li>
-                <Link to="/contact-us">Contact Us</Link>
+                <Link to="/contact-us" className="link-style">Contact Us</Link>
               </li>
 
               <li>
-                <Link to="/coupons">Coupons</Link>
+                <Link to="/coupons" className="link-style">Coupons</Link>
               </li>
               {
-                isAuthenticated?<button onClick={()=>{
+                isAuthenticated?<button className="logout-btn" onClick={()=>{
                   setisAuthenticated(false);
                 }}>Logout</button>:""
               }
