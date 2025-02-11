@@ -8,6 +8,7 @@ const ContextData = ({ children }) => {
   const [productdata, setproductdata] = useState([]);
   const [isAuthenticated, setisAuthenticated] = useState(false);
   const [userdetail, setuserdetail] = useState({});
+  const [searchvalue,setsearchvalue]=useState("");
   useEffect(() => {
     const f = async () => {
       const res = await fetch("https://dummyjson.com/products?limit=200");
@@ -26,6 +27,8 @@ const ContextData = ({ children }) => {
         setisAuthenticated,
         userdetail,
         setuserdetail,
+        searchvalue,
+        setsearchvalue
       }}
     >
       {children}

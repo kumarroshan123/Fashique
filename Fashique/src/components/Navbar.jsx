@@ -6,6 +6,7 @@ import bag from "../assets/bag.png";
 import like from "../assets/like.png";
 import profile from "../assets/profile.jpg";
 import studio from "../assets/studio.png"
+import { useState } from "react";
 
 <link
   href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
@@ -13,9 +14,16 @@ import studio from "../assets/studio.png"
 ></link>;
 
 const Navbar = () => {
-  const { isAuthenticated ,setisAuthenticated, userdetail } = useContext(ContextName);
+  const { isAuthenticated ,setisAuthenticated, userdetail ,setsearchvalue } = useContext(ContextName);
   const navigate = useNavigate();
+  const [search, setsearch] = useState("");
   console.log(userdetail);
+  const handlesearch=(e)=>{
+     if(e.key==="Enter" && search.trim()!==""){
+       setsearchvalue(search);
+       navigate("./search");
+     }
+  };
   return (
     <>
       <div className="navbar">
@@ -1062,7 +1070,7 @@ const Navbar = () => {
             </svg>
           </div>
           <div className="search-input">
-            <input type="text" placeholder="Search for products , categories" />
+            <input type="text" placeholder="Search for products , categories" onChange={(e)=>setsearch(e.target.value)}  onKeyDown={handlesearch} />
           </div>
         </div>
         <div className="profile">

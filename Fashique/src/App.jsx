@@ -12,6 +12,7 @@ import Beauty from "./components/beauty";
 import Electronics from "./components/Electronics";
 import Wishlist from "./components/wishlist";
 import Bag from "./components/bag";
+import SearchResults from "./components/searchpage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
          <Route path="/electronics" element={<Electronics />}/>
          <Route path="/wishlist" element={<Wishlist />}/>
          <Route path="/bag" element={<Bag/>}></Route>
+         <Route path="/search" element={<SearchResults/>}></Route>
         {/* 
           <Route path="topwear" element={<Placeholder category="Men - Topwear" />} />
           <Route path="bottomwear" element={<Placeholder category="Men - Bottomwear" />} />
