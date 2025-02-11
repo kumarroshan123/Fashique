@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { ContextName } from "./Contextapi";
+import './bag.css'
 
 const Bag = () => {
   const { userdetail } = useContext(ContextName);

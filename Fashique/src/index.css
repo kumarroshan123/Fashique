@@ -244,13 +244,17 @@ hr {
   }
 
 .carousel{
-  width: 80%;
+  
   margin: auto;
-  display: block;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .carousel img{
-  width: 150px;
+  
   height: auto;
   display: block;
 }
@@ -364,3 +368,16 @@ hr {
     padding: 5px;
     cursor: pointer;
   }
+
+.pic6{
+  display: flex;
+  justify-content: center;
+}
+.pic10{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 20px;
+}
+.pic10 img{
+  width: 1460px;
+}
