@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { ContextName } from "./Contextapi";
+import pic12 from "../assets/pic12.png";
 import './bag.css'
 
 const Bag = () => {
@@ -20,18 +21,23 @@ const Bag = () => {
   };
   return (
     <div>
-      <div className="bag-image-div">
-        <img src="" alt="" />
-      </div>
-      <div className="address-image-div">
-        <img src="" alt="" />
-      </div>
-      <div className="bag-main-body">
-        <div className="bag-list-div">
-          {bag &&
-            bag.map((ele) => {
-              return (
-                <div>
+      {bag.length === 0 ? ( // 🔹 Check if bag is empty
+        <div className="empty-bag">
+          <h2>Your Bag is Empty 🛍️</h2>
+          <p>Looks like you haven't added anything yet.</p>
+        </div>
+      ) : (
+        <>
+          <div className="bag-image-div">
+            <img src={pic12} alt="" />
+          </div>
+          <div className="address-image-div">
+            <img src="" alt="" />
+          </div>
+          <div className="bag-main-body">
+            <div className="bag-list-div">
+              {bag.map((ele) => (
+                <div className="bag-item" key={ele.id}>
                   <div>
                     <img src={ele.thumbnail} alt="" />
                   </div>
@@ -49,18 +55,22 @@ const Bag = () => {
                     </button>
                   </div>
                 </div>
-              );
-            })}
-        </div>
-        <div className="bag-total-div">
-            <h3>Order Summary</h3>
-            <p>Total Items: {bag.length}</p>
-            <p><b>Total Price: Rs. {totalPrice}</b></p>
-            <button className="place-order-btn" onClick={() => alert("Order Placed!")}>
-              Place Order
-            </button>
-        </div>
-      </div>
+              ))}
+            </div>
+            <div className="bag-total-div">
+              <h3>Order Summary</h3>
+              <p>Total Items: {bag.length}</p>
+              <p>Coupon Discount: 50</p>
+              <p>Platform Fee: $20</p>
+              <p>Shipping Fee: $10</p>
+              <p><b>Total Price: Rs. {totalPrice-30}</b></p>
+              <button className="place-order-btn" onClick={() => alert("Order Placed!")}>
+                Place Order
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

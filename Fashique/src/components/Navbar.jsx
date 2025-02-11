@@ -22,6 +22,7 @@ const Navbar = () => {
      if(e.key==="Enter" && search.trim()!==""){
        setsearchvalue(search);
        navigate("./search");
+       setsearch("");
      }
   };
   return (
@@ -1070,7 +1071,7 @@ const Navbar = () => {
             </svg>
           </div>
           <div className="search-input">
-            <input type="text" placeholder="Search for products , categories" onChange={(e)=>setsearch(e.target.value)}  onKeyDown={handlesearch} />
+            <input type="text" placeholder="Search for products , categories" value={search} onChange={(e)=>setsearch(e.target.value)}  onKeyDown={handlesearch} />
           </div>
         </div>
         <div className="profile">
