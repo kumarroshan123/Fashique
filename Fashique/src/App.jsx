@@ -11,6 +11,7 @@ import Homeliving from "./components/Homeliving";
 import Beauty from "./components/beauty";
 import Electronics from "./components/Electronics";
 import Wishlist from "./components/wishlist";
+import Bag from "./components/bag";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
          <Route path="/beauty" element={<Beauty />}/>
          <Route path="/electronics" element={<Electronics />}/>
          <Route path="/wishlist" element={<Wishlist />}/>
+         <Route path="/bag" element={<Bag/>}></Route>
         {/* 
           <Route path="topwear" element={<Placeholder category="Men - Topwear" />} />
           <Route path="bottomwear" element={<Placeholder category="Men - Bottomwear" />} />

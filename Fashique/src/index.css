@@ -223,6 +223,10 @@ hr {
   margin: 5px;
 }
 
+.logout-btn:hover{
+  background-color: rgb(209, 3, 3);
+}
+
 .home-main {
   width: 100%;
   padding: 20px;

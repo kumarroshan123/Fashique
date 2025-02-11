@@ -1126,7 +1126,9 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          <div className="nav-profile">
+          <div className="nav-profile" onClick={()=>{
+            navigate('/bag')
+          }}>
             <div>
               <img src={bag} alt="" />
             </div>
