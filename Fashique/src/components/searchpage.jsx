@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import { ContextName } from "./Contextapi";
+import "./searchpage.css"
 
 const SearchResults = () => {
   const { productdata,searchvalue} = useContext(ContextName);
